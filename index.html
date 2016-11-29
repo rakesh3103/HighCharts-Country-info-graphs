@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="highcharts.js"></script>
+
+<script src="https://www.highcharts.com/samples/static/highslide-full.min.js"></script>
+<script src="https://www.highcharts.com/samples/static/highslide.config.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://code.highcharts.com/modules/drilldown.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <link rel="icon" href="logo.png">
+<style>
+
+.highslide-wrapper {
+    background-color: white;
+}
+/* Set 400px as the default width for expanders */
+.highslide-wrapper .highslide-html-content {
+    width: 400px;
+    padding: 5px;
+}
+/* The list of controls */
+.highslide-wrapper .highslide-header ul {
+    margin: 20;
+    padding: 0;
+    text-align: right;
+}
+.highslide-wrapper .highslide-header ul li {
+    display: inline;
+    padding-left: 1em;
+}
+/* Hide the previous and next links */
+.highslide-wrapper .highslide-header ul li.highslide-previous, .highslide-wrapper .highslide-header ul li.highslide-next {
+    display: none;
+}
+.highslide-wrapper .highslide-header a {
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.highslide-wrapper .highslide-header a:hover {
+    color: black;
+}
+.highslide-wrapper .highslide-header .highslide-move a {
+    text-align: center;
+    cursor: move;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myTable{
+
+border-collapse: collapse;
+transition: all 5s ease-out;
+}
+ #myTable, td, th{
+border : 1px solid black;
+
+}
+td,th{
+padding: 8px 8px 8px 8px;
+ }
+ tr:nth-child(odd){
+ background-color: #f2f2f2;
+ }
+.title{
+
+background-color: #99ccff;
+}
+
+#button{
+
+margin: 20px 5px 20px 10px;
+
+}
+.main{
+
+margin: 40px 2px 20px 2px;
+}
+h1{
+padding: 0px 0px 0px 70px;
+	}
+</style>
+
+<title>World Countries</title>
+
+</head>
+
+
+
+<body>
+
+
+		
+			
+			   <div class="row title">
+			     <div class="col-md-4">
+				 <button type="button" id="button" class="btn btn-primary">Get Countries data</button>
+				 </div>
+				 <div class="col-md-8">
+                   <h1>Country Data</h1>
+                 </div>				 
+			   
+			   
+			   
+			   
+			   </div>
+			   <div class="container">
+               <div class="row main">
+                  <div class="col-md-4">
+			   <table id="myTable" class="imagetable">
+			
+                 </table>
+                  </div>
+				  <div class="col-md-8">
+				  <div class ="row">
+				  <div id="mainChart"></div>
+				  </div>
+				  <div class= "row">
+				     <div id="drillDown"></div>
+				  </div>
+				  </div>
+
+</div>
+</div>
+      
+     
+<script src="myAjaxJS.js"></script>
+</body>
+</html>
